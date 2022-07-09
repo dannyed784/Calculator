@@ -1,17 +1,16 @@
+@import url('buttons.css');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/*Importante: para centrar el container en el body debes darle un height en este caso el min-height=100vh*/
 body {
   min-height: 100vh;
-  background-color: #893b3b;
-}
-
-.calculator-container {
-  width: 40%;
-  height: 500px;
-  margin: 0 auto;
-  background-color: #ccc;
+  background-color: #fff;
+  font-family: 'Gulzar', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

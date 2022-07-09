@@ -1,0 +1,55 @@
+.calculator-container {
+  width: 350px;
+  height: 500px;
+  padding: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.16);
+}
+
+.input-form {
+  grid-column: 1 / span 3;
+  display: flex;
+  justify-content: center;
+}
+
+/*Esto se hace para quitar los bordes predefinidos estaticos y cuando haces click*/
+.input {
+  width: 70%;
+  margin-bottom: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+}
+
+/*Esto se hace para quitar los spin buttons de arriba y abajo del input*/
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.button {
+  height: auto;
+  color: #4e4d4d;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+}
+
+/*con esto le damos el efecto de click al boton bajamos la sombra y ponemos una scala del boton
+mas pequena de 0.98*/
+.button:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
