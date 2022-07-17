@@ -1,0 +1,36 @@
+ ***DOM Manipulation*** 
+--Seleccionar un elemento del DOM--
+Example: en este caso usamos querySelector
+const link = document.querySelector('a');
+
+--Podemos cambiar la URL de link:--
+link.href = 'https://developer.mozilla.org'; 
+
+--Seleccionar varios elementos del mismo tipo--
+const elements = document.querySelectorAll('a')
+elements guardara todos los elementos 'a' que hay en el 
+document y devuelve un array con ellos mismos.
+
+--Cambiar el estilo de un elemento--
+const element = document.querySelector('h1');
+element.style.backgroundColor = 'yellow'; 
+
+--Para anadir un atributo a un elemento--
+const createdElement = document.createElement('div');
+createElement.id = "nombre del id"; 
+
+--Para trabajar con estilos en el DOM con JS--
+ejem:
+let $elemento = document.querySelector('.container');
+$elemento.style.color; //lo optienes esto nos devuelve 'color' ; 
+$element.style.color = #color; //y lo cambias tambien
+//otra manera de optenerlo es ponerlo en el elemento como atributo y luego
+//acceder a el:
+--para obtener el atributo de un elemento
+$element.getAttribute('style'); //ya hay un atributo style en el HTML document
+// y nos devuelve esto color:'color'; 
+
+--para setiar un estilo a un elemento--
+$elemento.style.setProperty('color','#5df); 
+$elemento.style.setProperty('font-size','1.5rem'); 
+$elemento.style.setProperty('background',#fff); 
